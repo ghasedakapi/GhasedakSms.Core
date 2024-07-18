@@ -7,7 +7,7 @@ namespace GhasedakSms.Core.Dto
         public string LineNumber { get; set; }
         public string MessageBody { get; set; }
         public List<Data> Items { get; set; }
-        public int Cost { get; set; }
+        public int TotalCost { get; set; }
 
 
         public class Data
