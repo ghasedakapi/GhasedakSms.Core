@@ -20,6 +20,7 @@ namespace GhasedakSms.Core
             _client.DefaultRequestHeaders.Add("Accept", "application/json");
             _client.DefaultRequestHeaders.Add("cache-control", "no-cache");
             _client.DefaultRequestHeaders.Add("ApiKey", apiKey);
+            _client.DefaultRequestHeaders.Add("Agent", ".Net");
         }
 
         public async Task<ResponseDto<List<SmsStatusResponseItems>>> CheckSmsStatus(CheckSmsStatusInput query, CancellationToken cancellationToken = default)
