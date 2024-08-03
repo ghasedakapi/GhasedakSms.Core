@@ -6,9 +6,8 @@ namespace GhasedakSms.Core.Dto
     {
         public int Cost { get; set; }
         public string LineNumber { get; set; }
+        public string ClientReferenceId { get; set; }
         public List<ReceptionInfo> Receptors { get; set; }
-
-        //are these outputs considered necessary?
         public string Message { get; set; }
         public DateTime SendDate { get; set; }
 

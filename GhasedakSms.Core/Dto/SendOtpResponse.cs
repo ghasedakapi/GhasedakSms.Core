@@ -16,6 +16,7 @@ namespace GhasedakSms.Core.Dto
             public int Cost { get; set; }
             public string MessageId { get; set; }
             public DateTime SendDate { get; set; }
+            public string ClientReferenceId { get; set; }
         }
     }
 
