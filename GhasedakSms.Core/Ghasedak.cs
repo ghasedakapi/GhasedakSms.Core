@@ -27,8 +27,9 @@ namespace GhasedakSms.Core
         {
             var queryString = Helper.BuildQueryString($"{_url}CheckSmsStatus", new Dictionary<string, string>
             {
-                { "Type", query.Type.ToString() }
-            }, "Ids", query.Ids);
+                { "Type", query.Type.ToString() },
+                {"Ids", string.Join(',',query.Ids )}
+            });
 
             HttpResponseMessage response;
             try
